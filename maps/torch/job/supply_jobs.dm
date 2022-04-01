@@ -1,7 +1,7 @@
 /datum/job/qm
 	title = "Deck Officer"
-	department = "Support"
-	department_flag = SPT|SUP
+	department = "Supply"
+	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Commanding Officer"
@@ -9,9 +9,7 @@
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	alt_titles = list(
-		"Deck Chief",
-		"Gunnery Officer",
-		"Gunnery Chief")
+		"Deck Chief")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -34,16 +32,12 @@
 
 	access = list(access_maint_tunnels, access_bridge, access_emergency_storage, access_tech_storage,  access_cargo, access_guppy_helm,
 						access_cargo_bot, access_qm, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
-						access_mining, access_mining_office, access_mining_station, access_commissary, access_gunnery, access_eva)
+						access_mining, access_mining_office, access_mining_station, access_commissary)
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
-	
-/datum/job/qm/get_description_blurb()
-	return "You are the Deck Officer, and the Supply department, hanger, and munitions are your domain. Your responsibilities include ensuring the ship is supplied, the flight records are filled, shuttles are fuelled, missiles are made, and the ship is always combat ready for ship to ship combat." 						 
-
 
 /datum/job/cargo_tech
 	title = "Deck Technician"
@@ -53,9 +47,6 @@
 	spawn_positions = 3
 	supervisors = "the Deck Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	alt_titles = list(
-		"Supply Technician",
-		"Munitions Technician")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -77,15 +68,12 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_cargo, access_guppy_helm,
-						access_cargo_bot, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_commissary, access_gunnery, access_eva)
+						access_cargo_bot, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_commissary)
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
-	
-/datum/job/cargo_tech/get_description_blurb()
-	return "You are a Deck Technician, you answer directly to the Deck Officer. Your responsibilities are to ensure supplies ordered are delivered, shuttles are fuelled, munitions are made and loaded, and to man the ship's missile weaponry in the case  of ship to ship combat."
 
 /datum/job/mining
 	title = "Prospector"
