@@ -335,6 +335,10 @@
 	name = "Escape Pod Eight"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
+/area/shuttle/escape_pod9/station
+	name = "Escape Pod Nine"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
+
 /area/shuttle/escape_pod10/station
 	name = "Escape Pod Ten"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
@@ -804,7 +808,7 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(list(access_mining, access_xenoarch))
 
-/area/medical/storage
+/area/storage/medical
 	name = "Medical Storage"
 	icon_state = "medbay4"
 	sound_env = SMALL_ENCLOSED
@@ -1096,6 +1100,10 @@
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
 
+/area/medical/subacute
+	name = "\improper Sub-Acute Ward"
+	icon_state = "patients"
+
 /area/medical/counselor
 	name = "\improper Counselor's Office"
 	icon_state = "medbay3"
@@ -1115,10 +1123,10 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_crematorium)
 
-/area/medical/triage
-	name = "\improper Triage"
-	icon_state = "medbay"
-	req_access = list(access_medical)
+/area/medical/lounge
+	name = "\improper Staff Lounge"
+	icon_state = "locker"
+	req_access = list(access_medical_equip)
 
 /area/medical/reslab
 	name = "\improper Resuscitation Lab"
@@ -1126,9 +1134,6 @@
 
 /area/medical/virology
 	name = "\improper Virology (decomissioned)"
-
-/area/crew_quarters/safe_room/medical
-	name = "\improper Medical Safe Room"
 
 // Shield Rooms
 /area/shield
@@ -1685,6 +1690,15 @@
 /area/tdome/tdomeobserve
 	name = "\improper Thunderdome (Observer.)"
 	icon_state = "purple"
+
+/area/defturrets
+	name = "\improper Anti-Boarding Control"
+	icon_state = "security_sub"
+	base_turf = /turf/simulated/floor/reinforced/airless
+	requires_power = 1
+	dynamic_lighting = 1
+	req_access = list(access_brig)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/command/gunnery
 	name = "\improper Weapon Mounts"
