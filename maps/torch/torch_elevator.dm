@@ -22,19 +22,10 @@
 	icon_keyboard = "tiny_keyboard"
 	icon_screen = "lift"
 	density = 0
-
+	
 /obj/machinery/computer/shuttle_control/lift/robotics
 	name = "robotics lift controls"
 	shuttle_tag = "Robotics Lift"
-	ui_template = "shuttle_control_console_lift.tmpl"
-	icon_state = "tiny"
-	icon_keyboard = "tiny_keyboard"
-	icon_screen = "lift"
-	density = 0
-
-/obj/machinery/computer/shuttle_control/lift/missile
-	name = "robotics lift controls"
-	shuttle_tag = "Missiles Lift"
 	ui_template = "shuttle_control_console_lift.tmpl"
 	icon_state = "tiny"
 	icon_keyboard = "tiny_keyboard"
@@ -51,24 +42,13 @@
 	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
 	ceiling_type = null
 	knockdown = 0
-
+	
 /datum/shuttle/autodock/ferry/robotics_lift
 	name = "Robotics Lift"
 	shuttle_area = /area/turbolift/robotics_lift
 	warmup_time = 3
 	waypoint_station = "nav_robotics_lift_top"
 	waypoint_offsite = "nav_robotics_lift_bottom"
-	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
-	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
-	ceiling_type = null
-	knockdown = 0
-
-/datum/shuttle/autodock/ferry/missiles_lift
-	name = "Missiles Lift"
-	shuttle_area = /area/turbolift/missiles_lift
-	warmup_time = 3
-	waypoint_station = "nav_missiles_lift_top"
-	waypoint_offsite = "nav_missiles_lift_bottom"
 	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
 	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
 	ceiling_type = null
@@ -86,7 +66,7 @@
 	flags = SLANDMARK_FLAG_AUTOSET
 	base_area = /area/quartermaster/storage
 	base_turf = /turf/simulated/floor/plating
-
+	
 /obj/effect/shuttle_landmark/lift/robotics_top
 	name = "Top Deck"
 	landmark_tag = "nav_robotics_lift_top"
@@ -96,19 +76,6 @@
 /obj/effect/shuttle_landmark/lift/robotics_bottom
 	name = "Lower Deck"
 	landmark_tag = "nav_robotics_lift_bottom"
-	flags = SLANDMARK_FLAG_AUTOSET
-	base_area = /area/assembly/robotics/lower
-	base_turf = /turf/simulated/floor/plating
-
-/obj/effect/shuttle_landmark/lift/missiles_top
-	name = "Top Deck"
-	landmark_tag = "nav_missiles_lift_top"
-	base_area = /area/assembly/robotics
-	base_turf = /turf/simulated/open
-
-/obj/effect/shuttle_landmark/lift/missiles_bottom
-	name = "Lower Deck"
-	landmark_tag = "nav_missiles_lift_bottom"
 	flags = SLANDMARK_FLAG_AUTOSET
 	base_area = /area/assembly/robotics/lower
 	base_turf = /turf/simulated/floor/plating

@@ -2978,14 +2978,7 @@
 /turf/simulated/floor/plating,
 /area/security/wing)
 "afj" = (
-/obj/structure/railing/mapped{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/railing/mapped{
-	dir = 1
-	},
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/forestarboard)
 "afk" = (
 /obj/effect/floor_decal/corner/green{
@@ -25599,10 +25592,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/fore)
-"ncI" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/forestarboard)
 "ndb" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 6;
@@ -27723,12 +27712,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/conference)
 "pXG" = (
-/obj/structure/railing/mapped{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/railing/mapped,
-/turf/simulated/open,
+/obj/structure/table/standard,
+/obj/random/smokes,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/forestarboard)
 "pYb" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -31242,6 +31228,12 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
 /area/maintenance/firstdeck/aftstarboard)
+"vMm" = (
+/obj/structure/closet/crate,
+/obj/random/tank,
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/forestarboard)
 "vMw" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/evidence)
@@ -44843,10 +44835,10 @@ afL
 agJ
 adS
 afN
-ncI
+afN
 afj
 pXG
-ncI
+vMm
 ahQ
 afI
 aqi

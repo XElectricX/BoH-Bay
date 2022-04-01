@@ -81,7 +81,3 @@
 
 /obj/structure/plasticflaps/airtight // airtight defaults to on 
 	airtight = 1
-
-/obj/structure/plasticflaps/airtight/Initialize()
-	. = ..()
-	become_airtight() 
