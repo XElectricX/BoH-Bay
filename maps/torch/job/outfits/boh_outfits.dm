@@ -73,11 +73,6 @@
 	uniform = /obj/item/clothing/under/solgov/utility/army/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
 
-/decl/hierarchy/outfit/job/torch/crew/medical/virologist/marine
-	name = OUTFIT_JOB_NAME("Virologist - Marine Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/army/medical
-	shoes = /obj/item/clothing/shoes/dutyboots
-
 /decl/hierarchy/outfit/job/torch/crew/medical/doctor/marine
 	name = OUTFIT_JOB_NAME("Medical Technician - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/medical

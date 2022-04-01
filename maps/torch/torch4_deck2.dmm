@@ -1635,10 +1635,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
 "da" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/table/rack,
-/obj/random/firstaid,
-/obj/random/firstaid,
+/obj/effect/floor_decal/techfloor{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
 "db" = (
@@ -1655,9 +1654,6 @@
 	dir = 9
 	},
 /obj/effect/floor_decal/techfloor/corner,
-/obj/effect/floor_decal/techfloor/corner{
-	dir = 8
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/storage)
 "dc" = (
@@ -6949,8 +6945,10 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/seconddeck/elevator)
 "nb" = (
+/obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/l3closet/virology,
+/obj/random/firstaid,
+/obj/random/firstaid,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
 "nc" = (
@@ -8011,13 +8009,15 @@
 	dir = 8;
 	icon_state = "corner_techfloor_grid"
 	},
+/obj/effect/floor_decal/techfloor/corner{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/storage)
 "pi" = (
@@ -10869,10 +10869,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/bluespace/containment)
 "up" = (
-/obj/effect/floor_decal/techfloor,
-/obj/effect/floor_decal/techfloor{
+/obj/effect/floor_decal/techfloor/corner{
 	dir = 1
 	},
+/obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
 "uq" = (
@@ -11009,9 +11009,6 @@
 	},
 /obj/machinery/light/small{
 	dir = 4
-	},
-/obj/effect/floor_decal/techfloor/corner{
-	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
@@ -18140,9 +18137,6 @@
 "PD" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 4
-	},
-/obj/effect/floor_decal/techfloor{
-	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)

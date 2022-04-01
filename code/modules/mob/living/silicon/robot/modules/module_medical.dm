@@ -52,7 +52,6 @@
 	skills = list(
 		SKILL_ANATOMY     = SKILL_PROF,
 		SKILL_MEDICAL     = SKILL_PROF,
-		SKILL_VIROLOGY    = HAS_PERK,
 		SKILL_CHEMISTRY   = SKILL_ADEPT,
 		SKILL_BUREAUCRACY = SKILL_ADEPT,
 		SKILL_DEVICES     = SKILL_EXPERT
@@ -75,7 +74,7 @@
 
 /obj/item/weapon/robot_module/medical/surgeon/finalize_synths()
 	. = ..()
-	var/datum/matter_synth/medicine/medicine = locate() in synths
+	var/datum/matter_synth/medicine/medicine = locate() in synths 
 	for(var/thing in list(
 		 /obj/item/stack/nanopaste,
 		 /obj/item/stack/medical/advanced/bruise_pack
@@ -124,7 +123,6 @@
 	skills = list(
 		SKILL_ANATOMY     = SKILL_BASIC,
 		SKILL_MEDICAL     = SKILL_PROF,
-		SKILL_VIROLOGY    = HAS_PERK,
 		SKILL_CHEMISTRY   = SKILL_PROF,
 		SKILL_BUREAUCRACY = SKILL_ADEPT,
 		SKILL_EVA         = SKILL_EXPERT,
