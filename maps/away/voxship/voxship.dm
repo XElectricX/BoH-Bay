@@ -9,23 +9,21 @@
 	name = "Vox Ship"
 	id = "awaysite_voxship"
 	description = "Vox ship."
-	suffixes = list("voxship/voxship-1.dmm","voxship/voxship-2.dmm")
-	cost = 0.5//From 0.5
+	suffixes = list("voxship/voxship-1.dmm")
+	cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
-	area_coherency_test_subarea_count = list(
-		/area/voxship/armory = 17
-	)
+
 
 /obj/effect/overmap/visitable/ship/voxship
-	name = "Unkown ship type"
-	desc = "An unkown ship type, seemingly corvette to frigate in size made out of a unkown type of metal.\
+	name = "Abnormal Asteroid"
+	desc = "Sensors detect asteroid formation, rich in minerals. Non-geological formations present.\
 	Organic signature detected."
-	vessel_mass = 10000 //Heavy due to all the THICC metal surrounding it.
+	vessel_mass = 15000 //Rather heavy due to all the rocks surrounding it, and the sheer size
 	fore_dir = WEST
-	burn_delay = 2 SECONDS //Now more manoeuvrable due to the less mass
+	burn_delay = 5 SECONDS //Not very manoeuvrable due to the large mass
 
-	icon_state = "ship"
+	icon_state = "meteor4"
 	hide_from_reports = TRUE
 	initial_generic_waypoints = list(
 		"nav_vox_northwest",
